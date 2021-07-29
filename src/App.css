@@ -1,38 +1,130 @@
 .App {
+  background-image: url("./images/bg.jpg");
+  position: fixed;
+  min-width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+}
+
+.header > span {
+  margin-top: 1%;
+  margin-right: 5%;
+  margin-left: 1%;
+}
+
+.header > span > a {
+  color: white;
+  text-decoration: none;
+}
+
+.header > span > a:hover {
+  color: rgb(208, 158, 214);
+}
+
+.logo {
+  margin: 1.5% 0.5% 1% 10%;
+}
+
+.title > P {
+  width: 30%;
+  margin-left: 15%;
+  color: white;
+  margin-bottom: 50px;
+}
+
+.title > a {
+  color: rgb(1, 34, 1);
+  text-decoration: none;
+  background-color: white;
+  padding: 10px;
+  margin-left: 15%;
+}
+
+.title > a:hover {
+  background-color: green;
+  color: rgb(208, 158, 214);
+}
+
+.title > h1 {
+  color: white;
   text-align: center;
+  font-size: 50px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-shadow: 5px 5px #2a573d;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.title > h2 {
+  color: black;
+  text-align: center;
+  font-size: 30px;
+  font-family: "Times New Roman", Times, serif;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.icon {
+  margin-top: 50px;
+  margin-left: 10%;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.icon > span {
+  margin-right: 20px;
+}
+
+.icon-text {
+  color: white;
+  width: 10%;
+}
+
+.foodImage {
+  height: 400px;
+  display: inline;
+  margin-top: 10%;
+  width: 300px;
+}
+
+.flex-box {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  flex-wrap: nowrap;
+}
+
+.btn {
+  margin-top: 70%;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+.btn:hover {
+  color: blue;
+}
+
+.social {
+  margin-top: 15%;
+  margin-left: 10%;
+}
+
+.social > div {
+  background-color: green;
+  width: 20px;
+  margin-bottom: 5px;
+  border-radius: 10px;
+  padding: 3px;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.social > div:hover {
+  background-color: white;
+  color: green;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.social > button {
+  margin-top: 120%;
+  background-color: green;
+  color: white;
+  width: 60px;
+  border-radius: 10px;
+}
+
+.social > button:hover {
+  background-color: white;
+  color: green;
 }
